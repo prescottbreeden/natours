@@ -1,10 +1,29 @@
+
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+
 // colors
 $color-primary: #5FB8D8;
 $color-primary-light: #9DE4FF;
 $color-primary-dark: #72b6d2;
 
+$color-secondary-light: #ff9500;
+$color-secondary-dark: #fb6819;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-green: #55c57a;
+$color-green-light: #7ed56f;
+$color-green-dark: #28b485;
+
 $color-grey-light-1: #f7f7f7;
 
+$color-grey-light: #eee;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
@@ -12,6 +31,8 @@ $color-black: #000;
 // font
 $default-font-size: 1.6rem;
 
+// shadow
+$default-box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 // grid
 

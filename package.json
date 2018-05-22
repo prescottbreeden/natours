@@ -1,24 +1,18 @@
 {
-  "name": "starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "powder-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prescottbreeden/natours.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/prescottbreeden/natours/issues"
-  },
-  "homepage": "https://github.com/prescottbreeden/natours#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.9.0"
   }
 }
