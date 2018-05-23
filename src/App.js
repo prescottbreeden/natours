@@ -4,6 +4,7 @@ import About from './about/About';
 import Features from './features/Features';
 import Packages from './packages/Packages';
 import Stories from './stories/Stories';
+import Book from './booking/book';
 import './index.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <Features />
           <Packages />
           <Stories />
+          <Book />
         </main>
       </div>
     );

@@ -210,7 +210,7 @@ body {
   .card__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen;
+    background-blend-mode: color;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     border-top-left-radius: 3px;
@@ -276,7 +276,7 @@ body {
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
+    border-radius: 3px;
     position: absolute;
     z-index: 10;
     transition: all .1s;
@@ -339,8 +339,10 @@ body {
     position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-3.5rem);
-    backface-visibility: hidden; }
+    transform: translateX(-3.5rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s;
+    filter: blur(0.2px); }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -358,6 +360,9 @@ body {
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
+  .story:hover .story__img {
+    transform: translateX(-3.5rem) scale(1);
+    filter: blur(3px) brightness(80%); }
 
 .row {
   max-width: 114rem;
@@ -387,7 +392,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(95, 184, 216, 0.7), rgba(95, 184, 216, 0.4)), url("./img/bigAir.jpg");
+  background-image: linear-gradient(to right bottom, rgba(95, 184, 216, 0.7), rgba(95, 184, 216, 0.4)), url("img/bigAir.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -426,3 +431,14 @@ body {
 .section-stories {
   padding: 15rem 0 0 0;
   background-color: #f7f7f7; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #9DE4FF, #72b6d2); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("./img/nat-10.jpg");
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  height: 50rem; }

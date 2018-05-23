@@ -22,8 +22,7 @@ const About = () => {
                     <p className="paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit aut quam soluta laudantium culpa ratione repellat aperiam rerum, aspernatur sint dolores voluptas eius laborum ipsa et exercitationem maiores quae!
                     </p>
-
-                    <a href="#" className="btn-text">Learn More &rarr;</a>
+                    <a href="/" className="btn-text">Learn More &rarr;</a>
                 </div>
                 <div className="col-1-of-2">
                     <div className="composition">

@@ -3,7 +3,7 @@
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: $color-white;
-    border-radius: 3px;
+    border-radius: $default-border-radius;
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
@@ -23,9 +23,10 @@
 
     &__img {
         height: 100%;
-        transform: translateX(-3.5rem);
+        transform: translateX(-3.5rem) scale(1.4);
         backface-visibility: hidden;
-
+        transition: all .5s;
+        filter: blur(0.2px);
     }
 
     &__text {
@@ -52,6 +53,7 @@
     }
 
     &:hover &__img {
-
+        transform: translateX(-3.5rem) scale(1);
+        filter: blur(3px) brightness(80%);
     }
 }
