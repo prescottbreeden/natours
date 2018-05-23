@@ -1,7 +1,7 @@
 import React from 'react';
-import photo1 from '../img/ivo-paul-van-vliet-heli1.jpg';
-import photo2 from "../img/johannes-waibel-view3.jpg";
-import photo3 from "../img/hendrik-morkel-view1.jpg";
+import photo1 from '../static/img/ivo-paul-van-vliet-heli1.jpg';
+import photo2 from "../static/img/johannes-waibel-view3.jpg";
+import photo3 from "../static/img/hendrik-morkel-view1.jpg";
 
 const About = () => {
     return (

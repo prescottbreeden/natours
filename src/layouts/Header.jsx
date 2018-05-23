@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../img/snowflake-white.png";
+import logo from "../static/img/snowflake-white.png";
 
 const Header = () => {
     return (

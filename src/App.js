@@ -1,11 +1,18 @@
+// react
 import React, { Component } from 'react';
-import Header from './header/Header';
-import About from './about/About';
-import Features from './features/Features';
-import Packages from './packages/Packages';
-import Stories from './stories/Stories';
-import Book from './booking/book';
-import './index.css';
+
+// layouts
+import Header from './layouts/Header.jsx';
+
+// components
+import About from './components/About.jsx';
+import Features from './components/Features.jsx';
+import Packages from './components/Packages.jsx';
+import Stories from './components/Stories.jsx';
+import Book from './components/book.jsx';
+
+// css
+import './static/index.css';
 
 class App extends Component {
   render() {

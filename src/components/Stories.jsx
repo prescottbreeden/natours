@@ -1,6 +1,6 @@
 import React from 'react';
-import bio1 from "../img/nat-8.jpg";
-import bio2 from "../img/nat-9.jpg";
+import bio1 from "../static/img/nat-8.jpg";
+import bio2 from "../static/img/nat-9.jpg";
 
 const Stories = () => {
     return (
