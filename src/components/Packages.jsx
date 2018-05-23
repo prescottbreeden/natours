@@ -8,6 +8,7 @@ const Packages = () => {
                 Most popular packages
             </h2>
         </div>
+
         <div className="row">
             <div className="col-1-of-3">
                 <div className="card">
@@ -29,7 +30,6 @@ const Packages = () => {
                                 <li>Difficulty: Easy</li>
                             </ul>
                         </div>
-                        
                     </div>
                     <div className="card__side card__side--back card__side--back-1">
                         <div className="card__cta">

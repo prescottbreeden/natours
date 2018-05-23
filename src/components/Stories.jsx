@@ -1,10 +1,21 @@
 import React from 'react';
 import bio1 from "../static/img/nat-8.jpg";
 import bio2 from "../static/img/nat-9.jpg";
+import video from '../static/img/Mt_Baker.mp4';
+import videoW from '../static/img/Mt_Baker.mp4';
 
 const Stories = () => {
     return (
         <section className="section-stories">
+        
+            <div className="bg-video">
+                <video className="bg-video__content" autoPlay muted loop>
+                    <source src={video} type="video/mp4" />
+                    <source src={videoW} type="video/webm" />
+                    Your browser is not supported!
+                </video>
+            </div>
+
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
                     Heaven is a chopper ride away

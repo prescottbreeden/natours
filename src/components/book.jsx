@@ -16,7 +16,7 @@ const Book = () => {
                                     className="form__input" 
                                     placeholder="Full Name" 
                                     id="name"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required/>
                                 <label 
                                     htmlFor="name" 
@@ -28,7 +28,7 @@ const Book = () => {
                                     className="form__input" 
                                     placeholder="email"
                                     id="email"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required />
                                 <label 
                                     htmlFor="email" 

@@ -23,13 +23,13 @@
 
 .section-packages {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 0rem 0;
+    padding: 25rem 0 15rem 0;
     margin-top: -10rem;
 }
 
 .section-stories {
-    padding: 15rem 0 0 0;
-    background-color: $color-grey-light-1;
+    position: relative;
+    padding: 15rem 0;
 }
 
 .section-book {
