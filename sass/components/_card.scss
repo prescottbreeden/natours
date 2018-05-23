@@ -56,13 +56,13 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/cliff_drop.jpg);
+            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(./img/cliff_drop.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(../img/board_pow_crop.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(./img/board_pow_crop.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(../img/mauro-paillex-heli2_lowres.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(./img/mauro-paillex-heli2_lowres.jpg);
         }
     }
 
