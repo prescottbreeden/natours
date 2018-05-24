@@ -18,6 +18,13 @@
 
     &__logo {
         height: 5rem;
+        transform: rotate(0);
+        transition-duration: .5s;
+    }
+
+    &__logo:hover {
+        transition-duration: .5s;
+        transform: rotate(45deg);
     }
 
     &__text-box {
@@ -27,4 +34,6 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+    
 }

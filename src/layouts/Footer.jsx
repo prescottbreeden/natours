@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                     <div className="col-1-of-2">
                         <p className="footer__copyright">
-                            Built by <a href="/" className="footer__link">Prescott Breeden</a> for his portfolio.  Check out my <a href="/" className="footer__link">other projects</a>. Copyright &copy; by Prescott Breeden. Layout designed by Jonas Schmedtman.
+                            This website was built by <a href="/" className="footer__link">Prescott Breeden</a>.  Check out my <a href="/" className="footer__link">other projects</a>. Copyright &copy; by Prescott Breeden. Layout designed by Jonas Schmedtman.
                         </p>
                     </div>
                 </div>
