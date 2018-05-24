@@ -18,6 +18,12 @@ import Stories from './components/Stories.jsx';
 import './static/index.css';
 
 class App extends Component {
+
+closeNav = () => {
+    console.log('clicked nav link');
+  }
+
+
   render() {
     return (
       <div className="App">

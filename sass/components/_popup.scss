@@ -10,6 +10,8 @@
             backface-visibility: hidden;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 
     &:target {
@@ -28,13 +30,19 @@
         display: table;
         overflow: hidden;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(.25);
+        -webkit-transform: translate(-50%, -50%) scale(.25);
+            -ms-transform: translate(-50%, -50%) scale(.25);
+                transform: translate(-50%, -50%) scale(.25);
+        -webkit-transition: all .5s .2s;
+        -o-transition: all .5s .2s;
         transition: all .5s .2s;
     }
 
     &:target &__content {
         opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
+        -webkit-transform: translate(-50%, -50%) scale(1);
+            -ms-transform: translate(-50%, -50%) scale(1);
+                transform: translate(-50%, -50%) scale(1);
     }
 
     &__left {
@@ -67,15 +75,9 @@
                 column-gap: 4rem;
         -webkit-column-rule: 1px solid $color-grey-light;
                 column-rule: 1px solid $color-grey-light;
-
-        -moz-column-count: 2;
-                column-count: 2;
-        -moz-column-gap: 4rem;
-                column-gap: 4rem;
-        -moz-column-rule: 1px solid $color-grey-light;
-                column-rule: 1px solid $color-grey-light;
-
-        -moz-hyphens: auto;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-light;
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;

@@ -468,6 +468,14 @@ body {
     -ms-transform: translateY(-1.5rem) scale(1.03);
     transform: translateY(-1.5rem) scale(1.03); }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -570,6 +578,8 @@ body {
   backface-visibility: hidden;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s; }
   .popup:target {
     opacity: 1;
@@ -590,10 +600,16 @@ body {
     display: table;
     overflow: hidden;
     opacity: 0;
+    -webkit-transform: translate(-50%, -50%) scale(0.25);
+    -ms-transform: translate(-50%, -50%) scale(0.25);
     transform: translate(-50%, -50%) scale(0.25);
+    -webkit-transition: all .5s .2s;
+    -o-transition: all .5s .2s;
     transition: all .5s .2s; }
   .popup:target .popup__content {
     opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1); }
   .popup__left {
     padding: 0;
@@ -617,13 +633,9 @@ body {
     column-gap: 4rem;
     -webkit-column-rule: 1px solid #eee;
     column-rule: 1px solid #eee;
-    -moz-column-count: 2;
     column-count: 2;
-    -moz-column-gap: 4rem;
     column-gap: 4rem;
-    -moz-column-rule: 1px solid #eee;
     column-rule: 1px solid #eee;
-    -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }

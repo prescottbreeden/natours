@@ -2,6 +2,7 @@ import React from 'react';
 import logo from "../static/img/snowflake-white.png";
 
 const Navigation = () => {
+
     return (
         <div className="navigation">
             <input type="checkbox" className="navigation__checkbox" id="navi-toggle" />
@@ -23,7 +24,7 @@ const Navigation = () => {
                         <img src={logo} alt="Logo" className="navigation__snowflake navigation__snowflake-2" /> 
                     </li>
                     <li className="navigation__item">
-                        <a href="#popup" className="navigation__link">Book now</a>
+                        <a href="#popup" className="navigation__link" onClick={this.closeNav}>Book now</a>
                         <img src={logo} alt="Logo" className="navigation__snowflake navigation__snowflake-3" /> 
                     </li>
                     <li className="navigation__item">
