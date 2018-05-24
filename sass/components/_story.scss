@@ -23,10 +23,13 @@
 
     &__img {
         height: 100%;
-        transform: translateX(-3.5rem) scale(1.4);
+        transform: translateX(-3.5rem) scale(1.1);
         backface-visibility: hidden;
-        transition: all .5s;
-        filter: blur(0.2px);
+        transition: transform .5s;
+
+        &-2 {
+            transform: translateX(-7rem) scale(1.1);
+        }
     }
 
     &__text {
@@ -54,6 +57,10 @@
 
     &:hover &__img {
         transform: translateX(-3.5rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+    &:hover &__img-2 {
+        transform: translateX(-7rem) scale(1);
         filter: blur(3px) brightness(80%);
     }
 }

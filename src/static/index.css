@@ -436,10 +436,11 @@ body {
     position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-3.5rem) scale(1.4);
+    transform: translateX(-3.5rem) scale(1.1);
     backface-visibility: hidden;
-    transition: all .5s;
-    filter: blur(0.2px); }
+    transition: transform .5s; }
+    .story__img-2 {
+      transform: translateX(-7rem) scale(1.1); }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
@@ -459,6 +460,9 @@ body {
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
     transform: translateX(-3.5rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+  .story:hover .story__img-2 {
+    transform: translateX(-7rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
 .footer {
