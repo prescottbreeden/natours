@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 // layouts
+import Navigation from './layouts/Navigation.jsx';
 import Header from './layouts/Header.jsx';
 import Footer from './layouts/Footer.jsx';
 
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navigation />
         <Header />
           <main>
             <About />
