@@ -8,41 +8,57 @@
 
     &__side {
         height: 52rem;
+        -webkit-transition: all .8s ease-out;
+        -o-transition: all .8s ease-out;
         transition: all .8s ease-out;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         border-radius: $default-border-radius;
         overflow: hidden;
-        box-shadow: $default-box-shadow;
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
 
         &--front {
             background-color: $color-white;
         }
 
         &--back {
-            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
             
             &-1 {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-green-light), to($color-green-dark));
+                background-image: -webkit-linear-gradient(left top, $color-green-light, $color-green-dark);
+                background-image: -o-linear-gradient(left top, $color-green-light, $color-green-dark);
                 background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);    
             }
             &-2 {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark));
+                background-image: -webkit-linear-gradient(left top, $color-secondary-light, $color-secondary-dark);
+                background-image: -o-linear-gradient(left top, $color-secondary-light, $color-secondary-dark);
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);    
             }
             &-3 {
+                background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark));
+                background-image: -webkit-linear-gradient(left top, $color-tertiary-light, $color-tertiary-dark);
+                background-image: -o-linear-gradient(left top, $color-tertiary-light, $color-tertiary-dark);
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);    
             }
         }
     }    
     
     &:hover &__side--front {
-        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
-        transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
     }
 
     // front side styling
@@ -56,12 +72,21 @@
         border-top-right-radius: 3px;
 
         &--1 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-green-light), to($color-green-dark)), url(./img/cliff_drop.jpg);
+            background-image: -webkit-linear-gradient(left top, $color-green-light, $color-green-dark), url(./img/cliff_drop.jpg);
+            background-image: -o-linear-gradient(left top, $color-green-light, $color-green-dark), url(./img/cliff_drop.jpg);
             background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(./img/cliff_drop.jpg);
         }
         &--2 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark)),url(./img/board_pow_crop.jpg);
+            background-image: -webkit-linear-gradient(left top, $color-secondary-light, $color-secondary-dark),url(./img/board_pow_crop.jpg);
+            background-image: -o-linear-gradient(left top, $color-secondary-light, $color-secondary-dark),url(./img/board_pow_crop.jpg);
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),url(./img/board_pow_crop.jpg);
         }
         &--3 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark)),url(./img/mauro-paillex-heli2_lowres.jpg);
+            background-image: -webkit-linear-gradient(left top, $color-tertiary-light, $color-tertiary-dark),url(./img/mauro-paillex-heli2_lowres.jpg);
+            background-image: -o-linear-gradient(left top, $color-tertiary-light, $color-tertiary-dark),url(./img/mauro-paillex-heli2_lowres.jpg);
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),url(./img/mauro-paillex-heli2_lowres.jpg);
         }
     }
@@ -84,12 +109,21 @@
         box-decoration-break: clone;
 
         &--1 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-green-light, .85)), to(rgba($color-green-dark, .85)));
+            background-image: -webkit-linear-gradient(left top, rgba($color-green-light, .85), rgba($color-green-dark, .85));
+            background-image: -o-linear-gradient(left top, rgba($color-green-light, .85), rgba($color-green-dark, .85));
             background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
         }
         &--2 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-secondary-light, .85)), to(rgba($color-secondary-dark, .85)));
+            background-image: -webkit-linear-gradient(left top, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+            background-image: -o-linear-gradient(left top, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
         }
         &--3 {
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba($color-tertiary-light, .85)), to(rgba($color-tertiary-dark, .85)));
+            background-image: -webkit-linear-gradient(left top, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
+            background-image: -o-linear-gradient(left top, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
             background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
         }
     }
@@ -119,7 +153,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         text-align: center;    
         width: 90%;
     }

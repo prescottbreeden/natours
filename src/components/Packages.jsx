@@ -2,7 +2,7 @@ import React from 'react';
 
 const Packages = () => {
     return (
-        <section className="section-packages">
+        <section className="section-packages" id="section-packages">
         <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
                 Most popular packages

@@ -7,6 +7,8 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 10rem;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
@@ -14,23 +16,30 @@
         //change for the <button> element
         border: none;
         cursor: pointer;
-        
     }
 
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(-3px);
+            -ms-transform: translateY(-3px);
+                transform: translateY(-3px);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
 
         &::after {
-            transform: scaleX(1.4) scaleY(1.6);
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
+                -ms-transform: scaleX(1.4) scaleY(1.6);
+                    transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
     }
 
     &:active,
     &:focus {
-        transform: translateY(-1px);
-        box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(-1px);
+            -ms-transform: translateY(-1px);
+                transform: translateY(-1px);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
         outline: none;
     }
 
@@ -44,6 +53,8 @@
         top: 0;
         left: 0;
         z-index: -1;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
         transition: all .4s;
     }
 
@@ -66,8 +77,10 @@
     }
 
     &--animated {
-        animation: moveInButton .5s ease-out .75s;
-        animation-fill-mode: backwards;
+        -webkit-animation: moveInButton .5s ease-out .75s;
+                animation: moveInButton .5s ease-out .75s;
+        -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards;
     }
 }
 
@@ -80,18 +93,26 @@
         text-decoration: none;
         border-bottom: .1rem solid $color-primary;
         padding: .3rem;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
         transition: all .2s;
     }
 
     &:hover {
         background-color: $color-primary;
         color: $color-white;
-        box-shadow: $default-box-shadow;
-        transform: translateY(-.2rem);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(-.2rem);
+            -ms-transform: translateY(-.2rem);
+                transform: translateY(-.2rem);
     }
 
     &:active {
-        box-shadow: $default-box-shadow;
-        transform: translateY(0);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
     }
 }

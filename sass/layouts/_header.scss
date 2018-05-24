@@ -1,5 +1,21 @@
 .header {
     height: 95vh;
+    background-image: -webkit-gradient(
+        linear, 
+        left top, right bottom, 
+        from(rgba($color-primary, 0.7)), 
+        to(rgba($color-primary, 0.4))), 
+        url('img/bigAir.jpg');
+    background-image: -webkit-linear-gradient(
+        left top, 
+        rgba($color-primary, 0.7), 
+        rgba($color-primary, 0.4)), 
+        url('img/bigAir.jpg');
+    background-image: -o-linear-gradient(
+        left top, 
+        rgba($color-primary, 0.7), 
+        rgba($color-primary, 0.4)), 
+        url('img/bigAir.jpg');
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-primary, 0.7), 
@@ -8,7 +24,8 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__logo-box {
         position: absolute;
@@ -18,20 +35,30 @@
 
     &__logo {
         height: 5rem;
-        transform: rotate(0);
-        transition-duration: .5s;
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+                transform: rotate(0);
+        -webkit-transition-duration: .5s;
+             -o-transition-duration: .5s;
+                transition-duration: .5s;
     }
 
     &__logo:hover {
-        transition-duration: .5s;
-        transform: rotate(45deg);
+        -webkit-transition-duration: .5s;
+             -o-transition-duration: .5s;
+                transition-duration: .5s;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
     }
 
     &__text-box {
         position: absolute;
         top: 40%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
         text-align: center;
     }
 

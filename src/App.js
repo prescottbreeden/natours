@@ -8,10 +8,11 @@ import Footer from './layouts/Footer.jsx';
 
 // components
 import About from './components/About.jsx';
+import Book from './components/Book.jsx';
 import Features from './components/Features.jsx';
+import Popup from './components/Popup.jsx';
 import Packages from './components/Packages.jsx';
 import Stories from './components/Stories.jsx';
-import Book from './components/Book.jsx';
 
 // css
 import './static/index.css';
@@ -29,7 +30,8 @@ class App extends Component {
             <Stories />
             <Book />
           </main>
-        <Footer />>
+        <Footer />
+        <Popup />
       </div>
     );
   }

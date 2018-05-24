@@ -16,12 +16,15 @@
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
         
         &:focus {
             outline: none;
             background-color: rgba($color-white, .9);
-            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            -webkit-box-shadow: 0 1rem 2rem rgba($color-black, .1);
+                    box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 3px solid $color-green;
         }
         
@@ -41,13 +44,17 @@
         margin-left: 2rem;
         margin-top: .7rem;
         display: block;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
         transition: all .3s;
     }
 
     &__input:placeholder-shown + &__label {
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-4rem);
+        -webkit-transform: translateY(-4rem);
+            -ms-transform: translateY(-4rem);
+                transform: translateY(-4rem);
     }
 
     &__radio-group {
@@ -87,9 +94,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
             background-color: $color-primary;
             opacity: 0;
+            -webkit-transition: opacity .2s;
+            -o-transition: opacity .2s;
             transition: opacity .2s;
         }
     }
