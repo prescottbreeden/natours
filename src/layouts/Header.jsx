@@ -12,7 +12,7 @@ const Header = () => {
                     <span className="heading-primary--main">Powder</span>
                     <span className="heading-primary--sub">reimagine life</span>
                 </h1>
-                <a href="/" className="btn btn--white btn--animated">Discover our Heli-skiing</a>
+                <a href="#section-packages" className="btn btn--white btn--animated">Discover our Heli-skiing</a>
             </div>
         </header>
     )

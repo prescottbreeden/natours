@@ -23,7 +23,7 @@ const Navigation = () => {
                         <img src={logo} alt="Logo" className="navigation__snowflake navigation__snowflake-2" /> 
                     </li>
                     <li className="navigation__item">
-                        <a href="/" className="navigation__link">Book now</a>
+                        <a href="#popup" className="navigation__link">Book now</a>
                         <img src={logo} alt="Logo" className="navigation__snowflake navigation__snowflake-3" /> 
                     </li>
                     <li className="navigation__item">

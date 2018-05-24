@@ -37,7 +37,7 @@ const Packages = () => {
                                 <p className="card__price-only">Only</p>
                                 <p className="card__price-value">$4,799</p>
                             </div>
-                            <a href="/" className="btn btn--white">Book now!</a>
+                            <a href="#popup" className="btn btn--white">Book now!</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const Packages = () => {
                                 <p className="card__price-only">Only</p>
                                 <p className="card__price-value">$6,799</p>
                             </div>
-                            <a href="/" className="btn btn--white">Book now!</a>
+                            <a href="#popup" className="btn btn--white">Book now!</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ const Packages = () => {
                                 <p className="card__price-only">Only</p>
                                 <p className="card__price-value">$9,799</p>
                             </div>
-                            <a href="/" className="btn btn--white">Book now!</a>
+                            <a href="#popup" className="btn btn--white">Book now!</a>
                         </div>
                     </div>
                 </div>
